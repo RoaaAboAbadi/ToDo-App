@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-container {
+    padding: 30px;
+    width: 60%;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 50px auto;
+    box-shadow: 0 0 30px rgba(0, 0, 139, 0.9), 0 0 60px rgba(0, 0, 139, 0.6);
+}
+
+.add-task {
+    padding: 30px;
+    position: relative;
+    background-color: #009688;
+    height: 50px;
+}
+
+.add-task .add-value {
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 99%;
+    height: 45px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.add-task .add-value:focus {
+    outline: none;
+}
+
+.add-task .plus {
+    position: absolute;
+    right: 12px;
+    font-size: 35px;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #009688;
+    cursor: pointer;
+}
+
+.tasks-content {
+    border: 10px solid #8080804a;
+}
+
+.tasks-content .no-tasks-mesege {
+    color: #777;
+    font-size: 15px;
+}
+
+.todo-container .tasks-content>span {
+    display: block;
+    background-color: #FFF;
+    padding: 10px;
+}
+
+.todo-container .tasks-content>span:not(:last-child) {
+    border-bottom: 10px solid #8080804a;
+}
+
+.todo-container .tasks-content .task-box .delate {
+    float: right;
+    background-color: #E91E63;
+    padding: 4px 10px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-container .tasks-content .task-box.finished {
+    text-decoration: line-through;
+}
+
+.task-state {
+    overflow: hidden;
+    padding: 10px;
+    border: 10px solid #009688;
+    font-size: 20px;
+}
+
+.task-state .tasks-count {
+    width: 50%;
+    float: left;
+}
+
+.task-state .tasks-complated {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.task-state .tasks-count span,
+.task-state .tasks-complated span {
+    color: #FFF;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1px 5px;
+}
+
+.task-state .tasks-count span {
+    background-color: #E91E63;
+}
+
+.task-state .tasks-complated span {
+    background-color: #03A9F4;
+}
+
+.task-box {
+    text-transform: uppercase;
+}
