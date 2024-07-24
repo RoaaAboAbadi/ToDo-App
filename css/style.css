@@ -8,7 +8,7 @@ body {
 
 .todo-container {
     padding: 30px;
-    width: 60%;
+    max-width: 60%;
     height: 400px;
     background-color: white;
     border: 1px solid #ddd;
@@ -120,4 +120,52 @@ body {
 
 .task-box {
     text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .todo-container {
+        max-width: 750px;
+    }
+    .add-value {
+        font-size: 18px;
+    }
+    .plus {
+        font-size: 28px;
+    }
+    .task-state {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .todo-container {
+        width: 90%;
+        padding: 15px;
+        height: auto;
+    }
+    .add-task {
+        height: auto;
+        padding: 15px;
+    }
+    .add-task .add-value {
+        font-size: 16px;
+        width: calc(100% - 50px);
+    }
+    .add-task .plus {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+    }
+    .tasks-content .no-tasks-mesege {
+        font-size: 14px;
+    }
+    .task-state {
+        font-size: 16px;
+    }
+    .task-state .tasks-count,
+    .task-state .tasks-complated {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
 }
